@@ -57,18 +57,34 @@ npm install
 
 **3. Environment Configuration**
 Create a .env file in the root directory and add your credentials:
-            ----Code snippet------
-PORT=3000(my port & and you keep your choice).
-MONGO_URI= your_mongodb_connection_string SESSION_SECRET=your_random_secret_key(in case of cluster)
-                &
-          =localhost:27017(in case of local-DB)
+
+----Code snippet------
+
+    PORT=3000(my port & and you keep your choice).
+
+
+MONGO_URI= **option-1 & option-2**
+
+    1 [your_mongodb_connection_string SESSION_SECRET=your_random_secret_key(in case of cluster)]
+
+    2 [localhost:27017(in case of local-DB)]
 
 **4. Running the Project**
 For development (with auto-reload):
 
 -----Bash Command--------
 
-npm run dev
+case I:- From local server
+
+    npm run dev
+
+case II: For render-website
+
+    node main.js
+
+case III: By run a file(main.js) on local
+
+    npm run start
 
 **Note: Ensure your package.json has "dev": "nodemon main.js" in the scripts section.**
 
