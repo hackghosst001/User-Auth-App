@@ -72,12 +72,19 @@ MONGO_URI= your_mongodb_connection_string SESSION_SECRET=your_random_secret_key(
 For development (with auto-reload):
 
 -----Bash Command--------
+
 case I:- From local server
+
 npm run dev
+
 case II: For render-website 
+
 node main.js
+
 case III: By run a file(main.js) on local
+
 npm run start
+
 **Note: Ensure your package.json has "dev": "nodemon main.js" in the scripts section.**
 
 ----------------------------------------------------------------------------------------------------------------------
