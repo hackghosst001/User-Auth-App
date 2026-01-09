@@ -57,11 +57,16 @@ npm install
 
 **3. Environment Configuration**
 Create a .env file in the root directory and add your credentials:
-            ----Code snippet------
-    PORT=3000(my port & and you keep your choice).
-    MONGO_URI= your_mongodb_connection_string SESSION_SECRET=your_random_secret_key(in case of cluster)
-                            &
-            =localhost:27017(in case of local-DB)
+
+----Code snippet------
+
+PORT=3000(my port & and you keep your choice).
+
+MONGO_URI= your_mongodb_connection_string SESSION_SECRET=your_random_secret_key(in case of cluster)
+
+&
+
+=localhost:27017(in case of local-DB)
 
 **4. Running the Project**
 For development (with auto-reload):
