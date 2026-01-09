@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login History</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <h2>Login History</h2>
+
+    <p>
+        <strong>Signup Date:</strong>
+        <%= new Date(user.signupDate).toDateString() %>
+    </p>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Login Date</th>
+            <th>Time</th>
+        </tr>
+
+        <% if (history.length === 0) { %>
+            <tr>
+                <td colspan="2">No login history found</td>
+            </tr>
+        <% } %>
+
+        <% history.forEach(log => { %>
+            <tr>
+                <td><%= new Date(log.loginDate).toDateString() %></td>
+                <td><%= new Date(log.loginDate).toLocaleTimeString() %></td>
+            </tr>
+        <% }) %>
+    </table>
+
+    <br>
+
+    <a href="/user-profile?email=<%= user._id %>">
+        <button>Back to Profile</button>
+    </a>
+</body>
+</html>
